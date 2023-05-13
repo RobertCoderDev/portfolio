@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from '../../styles/Navbar.module.css';
 import { Link } from 'react-scroll';
+import Image from 'next/image';
+import logo from '../../../public/logo.png';
 
 const Navbar = () => {
 
@@ -16,17 +18,8 @@ const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.navbarBrand}>
-                <Link to="home" smooth={true} duration={200}>Mi Portafolio</Link>
-                <button
-                    className={`${styles.navbarToggle} ${openMenu ? styles.navbarToggleOpen : ""}`}
-                    onClick={handleToggleMenu}
-                >
-                    <span className={styles.navbarToggleIcon}></span>
-                </button>
-            </div>
-
-            <ul className={`${styles.navbarNav} ${openMenu ? styles.navbarNavOpen : ""}`}>
+            <Link className={styles.logo} to="home" smooth={true} duration={200}><Image src={logo} alt='logo' /></Link>
+            <ul className={styles.nav} >
                 <li className={styles.navItem}>
                     <Link to="about" smooth={true} duration={200} className={styles.navLink} onClick={handleCloseMenu}>
                             Acerca de

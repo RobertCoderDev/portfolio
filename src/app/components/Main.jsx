@@ -4,9 +4,9 @@ import Link from "next/link";
 const Main = () => {
     return (
         <div className={styles.main}>
-            <section className={styles.section} id="home">
-                <h1>Hola, Soy robertvdev</h1>
-                <p>aquí va una foto</p>
+            <section className={styles.hero} id="home">
+                <h1>Hola, Soy Robert Vazquez</h1>
+                <p>@robertvdev</p>
             </section>
             <section className={styles.section} id="about">
                 <h1>Acerca de</h1>

@@ -11,6 +11,15 @@
     padding: 0 2.5rem;
     margin-top: 6rem;
 }
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 6rem;
+    font-size: 3rem;
+    border-bottom: solid 0.1rem rgba(255, 255, 255, 0.682);
+}
 .section {
     display: flex;
     flex-direction: column;
