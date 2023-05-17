@@ -1,18 +1,19 @@
 import { Link } from 'react-scroll';
 import { useEffect } from 'react';
-import styles from '../../styles/Link.module.css'
-import styles2 from '../../styles/Linkfull.module.css'
+import styles from '@styles/Link.module.css'
+import styles2 from '@styles/Linkfull.module.css'
 
 const Links = ({handle}) => {
     let style = styles2
 
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 1200) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        style = styles
-    } else {
-        style = styles2
+    
+    if (typeof window !== 'undefined') {
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 1200) {
+            style = styles
+        } else {
+            style = styles2
+        }
     }
 
 

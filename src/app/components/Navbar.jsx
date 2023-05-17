@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import styles from '../../styles/Navbar.module.css';
+import styles from '@styles/Navbar.module.css';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import logo from '../../../public/logo.png';
-import Menu from './Menu';
-import Links from './Links'
+import logo from '@public/logo.png';
+import Menu from '@components/Menu';
+import Links from '@components/Links';
 
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -30,7 +30,6 @@ const Navbar = () => {
 
     const handleToggleMenu = () => {
         setOpenMenu(!openMenu);
-        console.log("acción");
     };
 
     const handleCloseMenu = () => {

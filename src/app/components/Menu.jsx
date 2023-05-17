@@ -1,5 +1,5 @@
-import styles from '../../styles/Menu.module.css'
-import Links from './Links';
+import styles from '@styles/Menu.module.css'
+import Links from '@components/Links';
 
 const Menu = (props) => {
     return (

@@ -10,6 +10,7 @@
     width: 4rem;
     height: 3rem;
     margin-top: 0.6rem;
+    margin-right: 1rem;
 }
 .bar span {
     position: absolute;
@@ -25,7 +26,7 @@
     top: 0.7rem;
 }
 .bar span.middle {
-    top: 1.7rem;
+    top: 1.6rem;
 }
 .bar span.bottom {
     bottom: 0;

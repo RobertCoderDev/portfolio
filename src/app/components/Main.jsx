@@ -1,12 +1,12 @@
-import styles from "../../styles/Main.module.css";
+import styles from "@styles/Main.module.css";
 import Link from "next/link";
+import Hero from "./Hero";
 
 const Main = () => {
     return (
         <div className={styles.main}>
             <section className={styles.hero} id="home">
-                <h1>Hola, Soy Robert Vazquez</h1>
-                <p>@robertvdev</p>
+                <Hero />
             </section>
             <section className={styles.section} id="about">
                 <h1>Acerca de</h1>
