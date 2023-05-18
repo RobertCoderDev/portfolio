@@ -1,3 +1,9 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .motion{
     margin-top: 2rem;
 }
@@ -19,4 +25,41 @@
 .lottie {
     width: 25rem;
     height: 25rem;
+}
+
+/* media query */
+
+@media (min-width: 1200px) {
+    .container{
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 91rem;
+    }
+    .motion{
+        margin-top: 0;
+    }
+    .foto {
+        width: 55rem;
+        height: auto;
+        margin-left: 10rem;
+    }
+    .divNombre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombre {
+        font-size: 8.4rem;
+        text-align: center;
+        width: 48rem;
+    }
+    .tag {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .lottie {
+        width: 43rem;
+        height: 43rem;
+    }
 }
