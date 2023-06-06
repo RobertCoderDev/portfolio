@@ -1,6 +1,7 @@
 import styles from "@styles/Main.module.css";
 import Link from "next/link";
 import Hero from "./Hero";
+import About from "./About";
 
 const Main = () => {
     return (
@@ -8,13 +9,8 @@ const Main = () => {
             <section className={styles.hero} id="home">
                 <Hero />
             </section>
-            <section className={styles.section} id="about">
-                <h1>Acerca de</h1>
-                <p>
-                    ¡Hola! Soy Roberto Vazquez, un desarrollador web apasionado por crear soluciones web únicas y
-                    efectivas.
-                </p>
-                <p>Si tienes un proyecto en mente, ¡no dudes en contactarme!</p>
+            <section className={styles.about} id="about">
+                <About />
             </section>
             <section className={styles.section} id="projects">
                 <h1>Proyectos</h1>

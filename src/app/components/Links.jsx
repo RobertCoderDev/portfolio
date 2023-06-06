@@ -21,7 +21,7 @@ const Links = ({handle}) => {
     return (
         <ul className={style.nav} >
             <li className={style.navItem}>
-                <Link to="about" smooth={true} duration={200} className={style.navLink} onClick={handle}>
+                <Link to="about" smooth={true} duration={200} offset={-50} className={style.navLink} onClick={handle}>
                         Acerca de
                 </Link>
             </li>
