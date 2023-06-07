@@ -2,6 +2,7 @@ import styles from "@styles/Main.module.css";
 import Link from "next/link";
 import Hero from "./Hero";
 import About from "./About";
+import Projects from "./Projects";
 
 const Main = () => {
     return (
@@ -12,24 +13,8 @@ const Main = () => {
             <section className={styles.about} id="about">
                 <About />
             </section>
-            <section className={styles.section} id="projects">
-                <h1>Proyectos</h1>
-                <p>Aquí puedes ver algunos de mis proyectos más recientes:</p>
-                <div className={styles.project}>
-                    <h2>Proyecto rick and Morty</h2>
-                    <p>una web construida con vanilla JS, HTML5 y CSS3</p>
-                    <p>aquí va el link al proyecto</p>
-                </div>
-                <div className={styles.project}>
-                    <h2>Proyecto Platzi store</h2>
-                    <p>una web construida con Rect</p>
-                    <p>aquí va el link al proyecto</p>
-                </div>
-                <div className={styles.project}>
-                    <h2>Proyecto Billar</h2>
-                    <p>una web construida con Next.js</p>
-                    <p>aquí va el link al proyecto</p>
-                </div>
+            <section className={styles.projects} id="projects">
+                <Projects />
             </section>
             <section className={styles.section} id="technologies">
                 <h1>Tecnologías</h1>

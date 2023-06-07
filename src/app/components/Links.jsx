@@ -11,10 +11,8 @@ const Links = ({handle}) => {
         const screenWidth = window.innerWidth;
         if (screenWidth < 1200) {
             setStyle(styles)
-            console.log('soy mobile');
         } else {
             setStyle(styles2)
-            console.log('soy desktop');
         }
     },[])
 

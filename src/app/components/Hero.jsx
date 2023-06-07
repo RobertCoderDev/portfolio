@@ -6,18 +6,17 @@ import styles from "@styles/Hero.module.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
 
-
 const Hero = () => {
-    const [foto, setFoto] = useState(mobile)
+    const [foto, setFoto] = useState(mobile);
 
     const handleResize = () => {
         const screenWidth = window.innerWidth;
         if (screenWidth < 1200) {
-            setFoto(foto)
+            setFoto(foto);
         } else {
-            setFoto(desktop)
+            setFoto(desktop);
         }
-    }
+    };
 
     useEffect(() => {
         handleResize();
@@ -26,24 +25,34 @@ const Hero = () => {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className={styles.container}>
             <motion.div
                 className={styles.motion}
-                initial={{ opacity: 0, y:150 }}
+                initial={{ opacity: 0, y: 150 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                     duration: 1.5,
-                    delay: 0.5,
+                    delay: 1.5,
                 }}
             >
                 <Image className={styles.foto} src={foto} alt="yo" priority quality={100} />
             </motion.div>
             <div className={styles.divNombre}>
-                <h1 className={styles.nombre}>Hola, Soy Robert Vázquez</h1>
+                <motion.h1
+                    initial={{ opacity: 0, y: 150 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 1.5,
+                        delay: 0.5,
+                    }}
+                    className={styles.nombre}
+                >
+                    Hola, Soy Robert Vázquez
+                </motion.h1>
                 <p className={styles.tag}>@robertvdev</p>
                 <Player
                     className={styles.lottie}
