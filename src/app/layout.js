@@ -1,5 +1,13 @@
 import '@styles/globals.css'
 
+export const metadata = {
+  title: 'robertvdev',
+  description: 'By robertvdev',
+  icons: {
+    icon: '/favicon.svg',
+  },
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
