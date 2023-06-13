@@ -1,4 +1,5 @@
 import '@styles/globals.css'
+import Head from './head'
 
 export const metadata = {
   title: 'robertvdev',
@@ -11,11 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <head>
+        <Head />
+      </head>
       <body>{children}</body>
     </html>
   )
