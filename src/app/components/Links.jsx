@@ -29,7 +29,7 @@ const Links = ({handle}) => {
                 </Link>
             </li>
             <li className={style.navItem}>
-                <Link to="technologies" smooth={true} duration={200} className={style.navLink} onClick={handle}>
+                <Link to="technologies" smooth={true} duration={200} offset={-50} className={style.navLink} onClick={handle}>
                         Tecnologías
                 </Link>
             </li>
