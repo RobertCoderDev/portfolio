@@ -28,10 +28,10 @@ const Main = () => {
             <section className={styles.contact} id="contact">
                 <h1>Contáctame</h1>
                 <div className={styles.contactImg}>
-                    <Link href="https://www.facebook.com/robertvdev" target="_blank"><Image src={face} alt="face" priority quality={100} /></Link>
-                    <Link href="https://www.instagram.com/robertvdev" target="_blank"><Image src={insta} alt="insta" priority quality={100} /></Link>
-                    <Link href="https://twitter.com/robertvdev" target="_blank"><Image src={twit} alt="twit" priority quality={100} /></Link>
-                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5EFi0GUfa5jcEwW1bmb9sIGhQ8PheVN_XWs6sh_diQ8GfEQ/viewform" target="_blank"><Image src={form} alt="form" priority quality={100} /></Link>
+                    <Link href="https://www.facebook.com/robertcoderdev" target="_blank"><Image src={face} alt="face" priority quality={100} /></Link>
+                    <Link href="https://www.instagram.com/robertcoderdev" target="_blank"><Image src={insta} alt="insta" priority quality={100} /></Link>
+                    <Link href="https://twitter.com/robertcoderdev" target="_blank"><Image src={twit} alt="twit" priority quality={100} /></Link>
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfFWf5MZYOyM5jnsJz9haeGKWFwEUTOwjv-4Qz_-4nJe3esUw/viewform?usp=sf_link" target="_blank"><Image src={form} alt="form" priority quality={100} /></Link>
                 </div>
             </section>
         </div>
