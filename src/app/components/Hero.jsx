@@ -53,7 +53,7 @@ const Hero = () => {
                 >
                     Hola, Soy Robert Vázquez
                 </motion.h1>
-                <p className={styles.tag}>@robertvdev</p>
+                <p className={styles.tag}>@RobertCoder</p>
                 <Player
                     className={styles.lottie}
                     autoplay
