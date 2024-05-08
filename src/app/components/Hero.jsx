@@ -51,7 +51,7 @@ const Hero = () => {
                     }}
                     className={styles.nombre}
                 >
-                    Hola, Soy Robert Vázquez
+                    Hola, Soy Roberto Vázquez
                 </motion.h1>
                 <p className={styles.tag}>@RobertCoder</p>
                 <Player
