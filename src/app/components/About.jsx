@@ -13,10 +13,10 @@ const About = () => {
             <div className={styles.text}>
                 <h1>Algunas cosas sobre mi</h1>
                 <p>
-                    Soy Roberto Vázquez, un apasionado por la tecnología y la programación. Como ingeniero en sistemas
-                    computacionales, estoy siempre aprendiendo nuevas tecnologías para crear soluciones web únicas y
-                    efectivas. Me encantan los retos y crear Aplicaciones web que sean fáciles de usar. ¡Hablemos de tu
-                    proyecto!
+                Soy Roberto Vázquez, un apasionado de la tecnología con más de 3 años de experiencia. 
+                Como ingeniero en sistemas computacionales, me dedico a explorar constantemente nuevas tecnologías para diseñar soluciones web innovadoras y efectivas. 
+                Me apasiona enfrentar desafíos y desarrollar aplicaciones web intuitivas que brinden experiencias excepcionales. 
+                ¿Tienes un proyecto en mente? ¡Estoy aquí para ayudarte a hacerlo realidad!
                 </p>
                 <Link href="/CV.pdf" download="CV Roberto Vazquez.pdf" target="_blank">
                     <motion.button id="downloadButton" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
