@@ -1,0 +1,7 @@
+flowchart LR
+    U["Frontline Worker"] -->|WhatsApp| API["Ozaru API<br/>Node.js"]
+    API --> CV["Computer Vision<br/>Verificación de tareas"]
+    API --> LLM["Motor LLM<br/>Teach me back"]
+    API --> CAP["Microcápsulas<br/>Video IA"]
+    API --> RAG[("Pinecone<br/>RAG")]
+    GD["Google Drive"] --> RAG

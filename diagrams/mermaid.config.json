@@ -1,0 +1,17 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "background": "#09090b",
+    "primaryColor": "#111114",
+    "primaryTextColor": "#ededf0",
+    "primaryBorderColor": "#34d399",
+    "lineColor": "#34d399",
+    "secondaryColor": "#17171b",
+    "tertiaryColor": "#17171b",
+    "clusterBkg": "#0c2a22",
+    "clusterBorder": "#34d399",
+    "fontFamily": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "fontSize": "14px"
+  },
+  "flowchart": { "curve": "basis", "htmlLabels": true, "padding": 12 }
+}

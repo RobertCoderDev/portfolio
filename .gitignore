@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.atl
 
 # testing
 /coverage
@@ -11,6 +12,13 @@
 # next.js
 /.next/
 /out/
+next-env.d.ts
+
+# typescript
+*.tsbuildinfo
+
+# local mermaid render config (machine-specific path)
+puppeteer.config.json
 
 # production
 /build
