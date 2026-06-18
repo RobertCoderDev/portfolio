@@ -17,6 +17,7 @@ export const profile = {
 
 export const socials = {
   github: "https://github.com/RobertCoderDev",
+  linkedin: "https://www.linkedin.com/in/roberto-vazquez-coder/",
   x: "https://twitter.com/robertcoderdev",
   instagram: "https://www.instagram.com/robertcoderdev",
 } as const;
@@ -34,7 +35,14 @@ export const metrics: Metric[] = [
 ];
 
 // Marcas enterprise con las que se ha trabajado (vía Ozaru One).
-export const clients: string[] = ["Telcel", "Nadro", "Lamosa", "Citrofrut"];
+export const clients: string[] = [
+  "Telcel",
+  "Nadro",
+  "Lamosa",
+  "Citrofrut",
+  "MasBodega",
+  "Profuturo",
+];
 
 export type ExperienceItem = {
   year: string;
@@ -63,7 +71,7 @@ export const experience: ExperienceItem[] = [
     role: "Ozaru One, reconocido internacionalmente",
     org: "GESA Awards · Norteamérica",
     description:
-      "El producto que arquitecturé y lideré gana el GESA Award, con clientes enterprise como Telcel, Nadro, Lamosa y Citrofrut.",
+      "El producto que arquitecturé y lideré gana el GESA Award en la región de Norteamérica, con clientes enterprise como Telcel, Nadro, Lamosa, Citrofrut, MasBodega y Profuturo.",
   },
   {
     year: "Hoy",
@@ -98,9 +106,9 @@ export const stack: StackCategory[] = [
     items: [
       "Orquestación de LLMs (OpenAI · Anthropic · Gemini)",
       "n8n avanzado",
-      "RAG / Pinecone",
+      "RAG · Embeddings (OpenAI)",
       "Visión Artificial",
-      "Bases de datos vectoriales",
+      "Bases de datos vectoriales (Pinecone)",
     ],
   },
   {
@@ -108,10 +116,10 @@ export const stack: StackCategory[] = [
     command: "stack --core",
     items: [
       "Next.js (SSR/SSG)",
-      "React",
+      "React · TypeScript",
       "Tailwind CSS",
       "Node.js / Express",
-      "PostgreSQL / Supabase",
+      "PostgreSQL · MySQL · Supabase",
     ],
   },
 ];
@@ -144,8 +152,8 @@ export const projects: Project[] = [
       "Sincronización con Google Drive vía RAG (Pinecone) para consulta de documentos.",
     ],
     tags: ["WhatsApp API", "Computer Vision", "Pinecone RAG", "LLM", "Node.js"],
-    badges: ["🏆 GESA Awards 2025", "SOC 2"],
-    clients: ["Telcel", "Nadro", "Lamosa", "Citrofrut"],
+    badges: ["🏆 GESA Awards 2025 · Norteamérica", "SOC 2"],
+    clients: ["Telcel", "Nadro", "Lamosa", "Citrofrut", "MasBodega", "Profuturo"],
     image: "/projects/ozaru.png",
     diagram: "/diagrams/ozaru-one.svg",
     href: "https://ozaru.io",

@@ -8,41 +8,47 @@ export default function Experience() {
       id="experience"
       className="mx-auto max-w-5xl scroll-mt-24 px-6 py-24"
     >
-      <Reveal>
-        <SectionHeading
-          index="01"
-          command="git log --author=roberto"
-          title="Trayectoria"
-        />
-      </Reveal>
+      <div className="grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+        {/* Left column: heading + intro, pinned while the timeline scrolls. */}
+        <div className="lg:sticky lg:top-24 lg:self-start">
+          <Reveal>
+            <SectionHeading
+              index="01"
+              command="git log --author=roberto"
+              title="Trayectoria"
+            />
+          </Reveal>
 
-      <Reveal>
-        <p className="mb-12 max-w-2xl text-pretty text-lg leading-relaxed text-muted">
-          {profile.about}
-        </p>
-      </Reveal>
+          <Reveal>
+            <p className="text-pretty text-lg leading-relaxed text-muted">
+              {profile.about}
+            </p>
+          </Reveal>
+        </div>
 
-      <ol className="relative ml-3 border-l border-border">
-        {experience.map((item, i) => (
-          <li key={item.year} className="relative pl-8 pb-12 last:pb-0">
-            <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full border-2 border-accent bg-bg" />
-            <Reveal delay={i * 0.08}>
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <span className="font-mono text-sm text-accent">
-                  {item.year}
-                </span>
-                <h3 className="text-lg font-medium text-fg">{item.role}</h3>
-              </div>
-              <p className="mt-0.5 font-mono text-xs uppercase tracking-wider text-muted">
-                {item.org}
-              </p>
-              <p className="mt-3 max-w-2xl text-pretty leading-relaxed text-muted">
-                {item.description}
-              </p>
-            </Reveal>
-          </li>
-        ))}
-      </ol>
+        {/* Right column: the timeline fills the space. */}
+        <ol className="relative ml-3 border-l border-border">
+          {experience.map((item, i) => (
+            <li key={item.year} className="relative pl-8 pb-12 last:pb-0">
+              <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full border-2 border-accent bg-bg" />
+              <Reveal delay={i * 0.08}>
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span className="font-mono text-sm text-accent">
+                    {item.year}
+                  </span>
+                  <h3 className="text-lg font-medium text-fg">{item.role}</h3>
+                </div>
+                <p className="mt-0.5 font-mono text-xs uppercase tracking-wider text-muted">
+                  {item.org}
+                </p>
+                <p className="mt-3 text-pretty leading-relaxed text-muted">
+                  {item.description}
+                </p>
+              </Reveal>
+            </li>
+          ))}
+        </ol>
+      </div>
     </section>
   );
 }

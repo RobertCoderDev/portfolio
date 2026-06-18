@@ -8,7 +8,10 @@ export default function Impact() {
         <div className="rounded-2xl border border-border bg-surface/40 p-8 sm:p-10">
           <dl className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {metrics.map((metric) => (
-              <div key={metric.label} className="flex flex-col gap-2">
+              <div
+                key={metric.label}
+                className="flex flex-col items-center gap-2 text-center"
+              >
                 <dt className="text-3xl font-semibold tracking-tight text-accent sm:text-4xl">
                   {metric.value}
                 </dt>
@@ -19,11 +22,11 @@ export default function Impact() {
             ))}
           </dl>
 
-          <div className="mt-10 flex flex-col gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-10 border-t border-border pt-8">
             <span className="font-mono text-xs uppercase tracking-wider text-muted">
               Clientes enterprise
             </span>
-            <ul className="flex flex-wrap items-center gap-x-8 gap-y-3">
+            <ul className="mt-5 flex flex-wrap items-center gap-x-8 gap-y-3 sm:justify-between">
               {clients.map((client) => (
                 <li
                   key={client}

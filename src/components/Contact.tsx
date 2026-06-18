@@ -5,7 +5,11 @@ import SectionHeading from "./SectionHeading";
 const links = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { label: "GitHub", value: "github.com/RobertCoderDev", href: socials.github },
-  { label: "X", value: "@robertcoderdev", href: socials.x },
+  {
+    label: "LinkedIn",
+    value: "in/roberto-vazquez-coder",
+    href: socials.linkedin,
+  },
   { label: "Instagram", value: "@robertcoderdev", href: socials.instagram },
 ];
 
@@ -23,7 +27,7 @@ export default function Contact() {
       <Reveal delay={0.1}>
         <p className="mb-8 max-w-xl text-pretty text-lg leading-relaxed text-muted">
           ¿Un producto de IA por construir, un equipo que liderar o una idea que
-          quieres llevar a producción? Hablemos —directo, sin formularios.
+          quieres llevar a producción? Hablemos: directo, sin formularios.
         </p>
 
         <div className="grid gap-3 sm:grid-cols-2">

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
-import { profile } from "@/lib/content";
+import { profile, socials } from "@/lib/content";
 import "./globals.css";
 
 const inter = Inter({
@@ -52,6 +52,34 @@ export const metadata: Metadata = {
   },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  url: siteUrl,
+  image: `${siteUrl}${profile.photo}`,
+  jobTitle: profile.role,
+  email: `mailto:${profile.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "MX",
+  },
+  sameAs: [
+    socials.github,
+    socials.linkedin,
+    socials.x,
+    socials.instagram,
+  ],
+  knowsAbout: [
+    "AI Solutions Architecture",
+    "Technical Project Management",
+    "Retrieval-Augmented Generation",
+    "LLM Orchestration",
+    "DevOps",
+    "Next.js",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -61,7 +89,13 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -40,7 +40,7 @@ export default function CaseStudies() {
               )}
 
               <div className="p-7 sm:p-9">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
                   <div>
                     <div className="flex flex-wrap items-center gap-3">
                       <h3 className="text-2xl font-semibold tracking-tight text-fg">
@@ -64,22 +64,22 @@ export default function CaseStudies() {
                       href={project.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="shrink-0 rounded-md border border-border px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent/50 hover:text-accent"
+                      className="shrink-0 self-start rounded-md border border-border px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent/50 hover:text-accent sm:self-auto"
                     >
                       Visitar ↗
                     </a>
                   )}
                 </div>
 
-                <p className="mt-2 font-mono text-sm text-muted">
+                <p className="mt-4 font-mono text-sm text-muted">
                   <span className="text-fg/70">rol:</span> {project.role}
                 </p>
 
-                <p className="mt-5 max-w-2xl text-pretty leading-relaxed text-muted">
+                <p className="mt-6 max-w-2xl text-pretty leading-relaxed text-muted">
                   {project.summary}
                 </p>
 
-                <ul className="mt-5 flex flex-col gap-2.5">
+                <ul className="mt-6 flex flex-col gap-4">
                   {project.highlights.map((highlight) => (
                     <li
                       key={highlight}

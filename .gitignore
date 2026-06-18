@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .atl
+.playwright-mcp
 
 # testing
 /coverage
